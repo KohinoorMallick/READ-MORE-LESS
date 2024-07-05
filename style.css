@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.content-container {
+    width: 60%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+    overflow: hidden;
+    max-height: 100px; /* Initial height for truncation */
+    transition: max-height 0.3s ease;
+}
+
+.text-content.expanded {
+    max-height: 500px; /* Adjust as needed for the full height */
+}
+
+.read-more-btn {
+    display: block;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3;
+}
